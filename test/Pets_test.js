@@ -18,7 +18,12 @@ contract('Pets', function (accounts) {
         const nopets = await this.pets.noPets();
         assert.equal(nopets, 1);
         
-        const genes = await this.pets.getPet(0);
-        assert.equal(genes, 1);
+        const pet = await this.pets.getPet(0);
+        
+        assert.ok(Array.isArray(pet));
+        assert.equal(pet.length, 2);
+        assert.equal(pet[0], 1);
+        assert.equal(pet[1], 0);
     });
 });
+
