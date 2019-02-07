@@ -1,7 +1,7 @@
 pragma solidity ^0.4.24;
 
 contract Pets {
-    address public owner;
+    address public owner;    
     
     struct Pet {
         uint genes;
@@ -9,10 +9,12 @@ contract Pets {
     }
     
     Pet[] pets;
-  
+    address[] public petOwners;
+    
     constructor(uint _genes) public {
         owner = msg.sender;
         pets.push(Pet(_genes, 0));
+        petOwners.push(msg.sender);
     }
     
     function getPet(uint id) public view returns (uint genes, uint generation) {

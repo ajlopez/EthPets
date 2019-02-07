@@ -25,5 +25,11 @@ contract('Pets', function (accounts) {
         assert.equal(pet[0], 1);
         assert.equal(pet[1], 0);
     });
+    
+    it('owner initial pet', async function () {
+        const owner = await this.pets.petOwners(0);
+        
+        assert.equal(owner, creator);
+    });
 });
 
