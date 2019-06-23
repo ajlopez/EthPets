@@ -19,11 +19,9 @@ contract('Pets', function (accounts) {
         assert.equal(nopets, 1);
         
         const pet = await this.pets.getPet(0);
-        
-        assert.ok(Array.isArray(pet));
-        assert.equal(pet.length, 2);
-        assert.equal(pet[0], 1);
-        assert.equal(pet[1], 0);
+
+        assert.equal(pet.genes, 1);
+        assert.equal(pet.generation, 0);
     });
     
     it('owner initial pet', async function () {
