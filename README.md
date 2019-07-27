@@ -15,6 +15,7 @@ with crossover generation, WIP
 - [ERC-1155: The Crypto Item Standard](https://blog.enjincoin.io/erc-1155-the-crypto-item-standard-ac9cf1c5a226)
 - [Blockchain Startup Enjin to Release Dev Kit for Game Engine Giant Unity](https://cointelegraph.com/news/blockchain-startup-enjin-to-release-dev-kit-for-game-engine-giant-unity)
 - [Muttniks: An open source dapp to show you how we built Astro Ledger](https://hackernoon.com/muttniks-an-open-source-dapp-to-show-you-how-we-built-astro-ledger-8a063b788d0b)
+- [ERC20 Token Standard: A Beginners Guide](https://medium.com/cryptoxtech/erc20-token-standard-a-beginners-guide-5b5f0c87e11f)
 
 TBD
 
